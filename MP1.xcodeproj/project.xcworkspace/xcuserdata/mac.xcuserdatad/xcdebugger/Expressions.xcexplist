@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MP1Node::informGroupList(MsgTypes, int):MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::recvCallBack(void*, char*, int):MP1Node.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "sizeof(int)">
+            </PersistentString>
+            <PersistentString
+               value = "buffer">
+            </PersistentString>
+            <PersistentString
+               value = "ptrData - data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::rmEntryFromList(int):MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "EmulNet::ENsend(Address*, Address*, char*, int):EmulNet.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "temp">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::updateGroupList():MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::nodeLoopOps():MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::updateMyMemberList(char*):MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::sendMessage(MsgTypes, Address*, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;):MP1Node.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "msg[10]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::updateMyMemberList(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;):MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "std::__1::__deallocate(void*) [inlined]:new">
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::addMemberToGroup(Address*):MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::nodeLoop():MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Application::mp1Run():Application.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::updateMyMemberList(char*)::$_2::operator()(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;) const:MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::updateMyMemberList(char*)::$_4::operator()(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;) const:MP1Node.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "members">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::sendPingRequest():MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MemberListEntry::getid():Member.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::recvCallBack(void*, char*, int)::$_2::operator()(int) const:MP1Node.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "to">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::recvCallBack(void*, char*, int)::$_3::operator()(int) const:MP1Node.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "to">
+            </PersistentString>
+            <PersistentString
+               value = "addr">
+            </PersistentString>
+            <PersistentString
+               value = "(int)to.addr[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::sendMessage(MsgTypes, Address*):MP1Node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::sendMessage(MsgTypes, Address*, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;):MP1Node.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "msg[4]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::updateMyMemberList(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;)::$_0::operator()(char) const:MP1Node.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "members">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MP1Node::informGroupList(Address*, MsgTypes):MP1Node.cpp">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
