@@ -72,13 +72,14 @@ void MP1Node::rmEntryFromList(int id){
 
     
     if (memberNode->myPos >= memberNode->memberList.begin() && memberNode->myPos < memberNode->memberList.end()) {
-        memberNode->nnb--;
-        memberNode->timeOutCounter = 0;
-        memberNode->pingCounter = TFAIL;
         if(it < memberNode->memberList.end()){
+            memberNode->nnb--;
+            memberNode->timeOutCounter = 0;
+            memberNode->pingCounter = TFAIL;
+            to = getAddress(it->getid());
             memberNode->memberList.erase(it);
  //           to = getAddress(it->getid());
- //           log->logNodeRemove(&memberNode->addr, &to);
+            log->logNodeRemove(&memberNode->addr, &to);
         }
     }
 
@@ -524,11 +525,17 @@ bool MP1Node::recvCallBack(void *env, char *data, int size ) {
             ptrData += sizeof(int);
             id = *(int*)ptrData;
             to = getAddress(id);
-            log->logNodeRemove(&memberNode->addr, &to);
+
 #ifdef DEBUGLOG
             log->LOG(&memberNode->addr, "Member %d leavs the group.", id);
+//            log->logNodeRemove(&memberNode->addr, &to);
 #endif
             //            memcpy((char*)&entry, &data[1 + sizeof(Address)], sizeof(entry));
+//            if (find_if(memberNode->memberList.begin(), memberNode->memberList.end(), [id](MemberListEntry node)->bool{
+//                return id == node.id;
+//            }) != memberNode->memberList.end()){
+//                informGroupList(LEAVGROUP,id);
+//            }
             rmEntryFromList(id);
             break;
 //Got PING Request
@@ -657,11 +664,12 @@ void MP1Node::nodeLoopOps() {
     //first time send PING request
 //    if(memberNode->inGroup == true && memberNode->nnb > 0 ){
         memberNode->timeOutCounter++;
-        if(memberNode->timeOutCounter == TIMEOUT) //10
+//        if(memberNode->timeOutCounter == TIMEOUT) //10
             sendPingRequest();
 //    }
 
-    if(memberNode->timeOutCounter < TREMOVE + TIMEOUT) //TREMOVE = 20
+//    if(memberNode->timeOutCounter < TREMOVE + TIMEOUT) //TREMOVE = 20
+    if(memberNode->timeOutCounter <  TREMOVE) //TREMOVE = 20
         return;
 
     if (memberNode->myPos >= memberNode->memberList.end() || memberNode->myPos < memberNode->memberList.begin())
