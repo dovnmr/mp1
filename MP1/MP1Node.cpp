@@ -656,6 +656,8 @@ void MP1Node::updateMyMemberList(char* list){
  * 				the nodes
  * 				Propagate your membership list
  */
+//test message
+
 void MP1Node::nodeLoopOps() {
     static MemberListEntry failedMember;
     Address addr;
